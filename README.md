@@ -20,17 +20,26 @@ Search & filter campaigns
 Dashboard summary of all campaigns
 
 # Run Locally
+
 ---> Backend
+
 cd backend
+
 npm install
+
 npm start
 
 Backend server runs at http://localhost:5000
 
 ---> Frontend
+
 cd frontend
+
 npm install
+
 npm start
+
+wait for minute
 
 Frontend runs at http://localhost:3000
 
@@ -45,5 +54,3 @@ Dummy login credentials:
 Username: admin
 
 Password: admin
-
-Designed for learning and demonstration purposes
