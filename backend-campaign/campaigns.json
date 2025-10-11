@@ -1,0 +1,19 @@
+[
+  {
+    "id": "034cc47c-5931-4998-9a23-485a48b3393b",
+    "campaignName": "Internet",
+    "clientName": "Joseph",
+    "startDate": "2025-10-26",
+    "status": "Active",
+    "createdAt": "2025-10-10T19:43:47.525Z",
+    "updatedAt": "2025-10-11T18:51:28.559Z"
+  },
+  {
+    "id": "c18bee4b-374b-47e4-8e4e-e2c551147b7b",
+    "campaignName": "campaign1",
+    "clientName": "krishna",
+    "startDate": "2025-10-02",
+    "status": "Active",
+    "createdAt": "2025-10-10T19:42:32.319Z"
+  }
+]

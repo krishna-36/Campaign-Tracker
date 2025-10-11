@@ -1,0 +1,3 @@
+Short Notes:-
+
+I thank you for giving me the opportunity to showcase my skill in web app development . While building this project, I learned how to connect a React.js frontend with a Node.js + Express backend using JSON as a simple data store. It helped me understand how data flows between the client and server and the basics of full-stack development.

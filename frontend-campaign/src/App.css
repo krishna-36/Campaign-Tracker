@@ -1,0 +1,215 @@
+body {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a);
+  background-size: 300% 300%;
+  animation: gradientShift 10s ease infinite;
+  margin: 0;
+  padding: 20px;
+  color: #f1f5f9;
+  min-height: 100vh;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.15);
+}
+
+/* ===== Header ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  background: linear-gradient(90deg, #60a5fa, #818cf8);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0;
+}
+
+.logout {
+  background: linear-gradient(90deg, #ef4444, #dc2626);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.25s ease;
+}
+
+.logout:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 14px rgba(239, 68, 68, 0.4);
+}
+
+/* ===== Dashboard Cards ===== */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  text-align: center;
+  padding: 16px;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.25);
+}
+
+.card h4 {
+  color: #93c5fd;
+  margin: 0 0 6px;
+}
+
+.card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f1f5f9;
+}
+
+/* ===== Form ===== */
+.form {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.row input,
+.row select {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(202, 92, 92, 0.05);
+  color: #7e7f80;
+  outline: none;
+  transition: 0.25s ease;
+}
+
+.row input:focus,
+.row select:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 10px rgba(96, 165, 250, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.form button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(90deg, #3b82f6, #2563eb);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 18px rgba(59, 130, 246, 0.4);
+}
+
+/* ===== Search Input ===== */
+.search {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  color: #f8fafc;
+  margin-top: 16px;
+  outline: none;
+  transition: 0.25s ease;
+}
+
+.search:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 10px rgba(96, 165, 250, 0.4);
+}
+
+/* ===== Table ===== */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+  color: #e2e8f0;
+}
+
+.table th {
+  background: rgba(255, 255, 255, 0.08);
+  font-weight: 600;
+}
+
+.btn-delete {
+  background: linear-gradient(90deg, #ef4444, #dc2626);
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn-delete:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.4);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
