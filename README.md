@@ -23,7 +23,7 @@ Dashboard summary of all campaigns
 
 ---> Backend
 
-cd backend
+cd backend-campaign
 
 npm install
 
@@ -33,7 +33,7 @@ Backend server runs at http://localhost:5000
 
 ---> Frontend
 
-cd frontend
+cd frontend-campaign
 
 npm install
 
